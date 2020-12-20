@@ -6,10 +6,10 @@ const bodyParser = require('body-parser');
 
 const mongoose = require('mongoose')
 const port = process.env.PORT || 8081;
-const db_link = "mongodb://mongo:27017/helloworlddb";
+//const db_link = "mongodb://mongo:27017/helloworlddb";
 
 
-//const db_link = 'mongodb://localhost:27017/labdocker';
+const db_link = 'mongodb://localhost:27017/labdocker';
 //para poder manejar jsons, peticiones y respuestas 
 app.use(bodyParser.json({limit: '50mb'}));
 //se dice que no utilizamos peticiones directamente en formularios, sino que se procesa en formato json
